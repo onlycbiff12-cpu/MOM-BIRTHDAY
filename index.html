@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f4eb">
+  <meta name="description" content="مفاجأة عيد ميلاد بسيطة ومليئة بالمحبة">
+  <title>مفاجأة عيد الميلاد</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <section class="card" aria-live="polite">
+      <div class="topline"><span class="topline-mark" aria-hidden="true">✦</span><span>لحظة من القلب</span><span class="topline-mark" aria-hidden="true">✦</span></div>
+
+      <section class="screen is-active" id="welcome" aria-labelledby="welcome-title">
+        <p class="eyebrow">إلى أغلى إنسانة</p>
+        <h1 id="welcome-title">يا <span class="placeholder">أميرة</span></h1>
+        <p class="intro">حضّرت لكِ شيئًا صغيرًا،<br>افتحي هديتكِ لتريه.</p>
+        <button class="gift-button" id="open-gift" type="button" aria-label="افتحي الهدية">
+          <span class="gift-glow" aria-hidden="true"></span>
+          <svg class="gift-icon" viewBox="0 0 120 120" role="img" aria-hidden="true">
+            <path d="M19 51h82v56H19z" fill="#d5b46b"/>
+            <path d="M13 39h94v22H13z" fill="#c49c4e"/>
+            <path d="M54 39h12v68H54z" fill="#f6edda"/>
+            <path d="M60 39C35 39 28 29 33 20c6-10 22-3 27 19Zm0 0c25 0 32-10 27-19-6-10-22-3-27 19Z" fill="none" stroke="#b58c42" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19 68h82M19 81h82" fill="none" stroke="#e8d3a3" stroke-opacity=".5" stroke-width="1.5"/>
+          </svg>
+          <span class="gift-hint">اضغطي هنا</span>
+        </button>
+        <p class="small-note">هدية بسيطة… بمحبة كبيرة</p>
+      </section>
+
+      <section class="screen" id="greeting" aria-labelledby="greeting-title" hidden>
+        <div class="celebration" aria-hidden="true"><span>✦</span><span>✧</span><span>✦</span><span>·</span><span>✧</span></div>
+        <p class="eyebrow">اليوم يومك</p>
+        <h2 id="greeting-title">كل سنة وانتي طيبة يا أحلى ما في يومي</h2>
+        <div class="gold-rule" aria-hidden="true"><span>✦</span></div>
+        <button class="text-button" type="button" data-next>كمّلي المفاجأة <span aria-hidden="true">←</span></button>
+      </section>
+
+      <section class="screen" id="closing" aria-labelledby="closing-title" hidden>
+        <div class="closing-star" aria-hidden="true">✧</div>
+        <p class="eyebrow">من كل قلبي</p>
+        <button id="closing-title" class="closing-message placeholder review-prompt" type="button" aria-label="اكتبي تقييمك للهدية">اكتبي تقييمك للهدية</button>
+        <textarea id="gift-review" class="closing-message review-input" aria-label="تقييمك للهدية" placeholder="اكتبي تقييمك للهدية" rows="2" dir="rtl" hidden></textarea>
+        <div class="gold-rule" aria-hidden="true"><span>✦</span></div>
+        <p class="signature">بكل الحب،<br><span class="placeholder">خالد</span></p>
+      </section>
+
+      <div class="progress" aria-label="التقدم في المفاجأة"><span class="progress-dot active"></span><span class="progress-line"></span><span class="progress-dot"></span><span class="progress-line"></span><span class="progress-dot"></span></div>
+      <p class="footer-note">صُنعت بمحبة</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
